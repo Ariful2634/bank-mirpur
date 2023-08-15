@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-20">Lets get some <span class=" text-amber-700">Money!!!</span></h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 text-white font-bold gap-4">
+                <div class="bg-green-600 p-10 text-center rounded-lg">
+                    <h3 class="text-3xl mb-2">Deposit</h3>
+                    <p class="text-4xl">$<span id="depo-tk">00</span></p>
+                </div>
+                <div class="bg-yellow-600 p-10 text-center rounded-lg">
+                    <h3 class="text-3xl mb-2">Withdraw</h3>
+                    <p class="text-4xl">$<span id="widh-bal">00</span></p>
+                </div>
+                <div class="bg-pink-600 p-10 text-center rounded-lg">
+                    <h3 class="text-3xl mb-2">Balance</h3>
+                    <p class="text-4xl">$<span id="bal">1240</span></p>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2  font-bold gap-4">
+                <div class="bg-sky-600 p-10  rounded-lg">
+                    <h3 class="text-3xl mb-2 text-white">Please Deposit</h3>
+                    <input class="block mb-2 w-9/12 px-2" type="text" name="" id="depo" placeholder="$ Amount You Want To Deposit">
+                    <button id="dep-btn" class="bg-amber-600 hover:bg-yellow-700  px-4 py-2 mt-2 rounded-lg text-white font-bold" type="submit">Submit</button>
+                </div>
+                <div class="bg-violet-600 p-10  rounded-lg">
+                    <h3 class="text-3xl mb-2 text-white">Please Withdraw</h3>
+                    <input  class="block mb-2 w-9/12 px-2" type="text" name="" id="widh" placeholder="$ Amount You Want To Withdraw">
+                    <button id="wid-btn" class="bg-amber-600 hover:bg-sky-700  px-4 py-2 mt-2 rounded-lg text-white font-bold" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="bank.js"></script>
+</body>
+
+</html>
